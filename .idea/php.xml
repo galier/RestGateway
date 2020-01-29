@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/gatewayService/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/gatewayService/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/gatewayService/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/gatewayService/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/gatewayService/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/gatewayService/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/gatewayService/vendor/composer" />
+    </include_path>
+  </component>
+</project>
