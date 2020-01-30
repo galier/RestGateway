@@ -7,6 +7,8 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require 'Service/PostsService.php';
 require 'GatewayHandler.php';
 require 'vendor/autoload.php';
+
+
 $app = new \Slim\App();
 
 $app->get('/items[/{id:[0-9]+}]', function (Request $request, Response $response)

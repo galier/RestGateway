@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b185bf-4251-427f-a16a-e509afcd758e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Service/RedisSender.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service/.htaccess" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Service/GatewayHandler.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Service/GatewayService/PostsService.php" beforeDir="false" />
@@ -738,6 +742,7 @@
       <change beforePath="$PROJECT_DIR$/Service/vendor/slim/slim/Slim/Router.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Service/vendor/slim/slim/composer.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Service/vendor/slim/slim/phpstan.neon.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -751,7 +756,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -774,7 +779,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gatewayService/GatewayService" />
+    <property name="last_opened_file_path" value="C:/битрикс/appeal" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -796,6 +801,7 @@
       <updated>1580335208368</updated>
       <workItem from="1580335210240" duration="1845000" />
       <workItem from="1580337276127" duration="991000" />
+      <workItem from="1580339467620" duration="7199000" />
     </task>
     <servers />
   </component>
@@ -803,9 +809,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580337854915">
+    <state x="492" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1580341622795">
       <screen x="0" y="0" width="1366" height="724" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.724@0.0.1366.724" timestamp="1580337854915" />
+    <state x="492" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.724@0.0.1366.724" timestamp="1580341622795" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580340471092">
+      <screen x="0" y="0" width="1366" height="724" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.724@0.0.1366.724" timestamp="1580340471092" />
+    <state x="417" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580344232860">
+      <screen x="0" y="0" width="1366" height="724" />
+    </state>
+    <state x="417" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.724@0.0.1366.724" timestamp="1580344232860" />
+    <state x="467" y="124" key="FileChooserDialogImpl" timestamp="1580340065693">
+      <screen x="0" y="0" width="1366" height="724" />
+    </state>
+    <state x="467" y="124" key="FileChooserDialogImpl/0.0.1366.724@0.0.1366.724" timestamp="1580340065693" />
+    <state x="484" y="204" key="NewPhpClassDialog" timestamp="1580340902002">
+      <screen x="0" y="0" width="1366" height="724" />
+    </state>
+    <state x="484" y="204" key="NewPhpClassDialog/0.0.1366.724@0.0.1366.724" timestamp="1580340902002" />
   </component>
 </project>

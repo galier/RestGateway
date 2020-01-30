@@ -11,11 +11,20 @@ class RedisClient
 
     public function Client()
     {
-        return new \Predis\Client([
-            'scheme' => 'tcp',
-            'host'   => '127.0.0.1',
-            'port'   => 6379,
-        ]);
+        try {
+            return new \Predis\Client([
+                'scheme' => 'tcp',
+                'host'   => '127.0.0.1',
+                'port'   => 6379,
+            ]);
+        }
+        catch (\Exception $exception){
+
+            return $exception;
+        }
+
+
+
 
     }
 }

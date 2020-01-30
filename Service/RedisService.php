@@ -2,6 +2,8 @@
 require 'vendor/predis/predis/autoload.php';
 require 'Service/redis/RedisClient.php';
 require 'Service/RedisServiceInterface.php';
+require 'RedisSender.php';
+
 use Predis\Autoloader;
 
 require 'vendor/autoload.php';
@@ -13,9 +15,31 @@ class RedisService extends \RedisClient\RedisClient implements RedisServiceInter
     public function Save($posts)
     {
 
-       $this->Client()->set('UserId:1:id:3', '[[{"userId":1,"id":2,"title":"qui est esse","body":"est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"}]]');
-     return  $this->Client()->get('UserId:1:id:3');
+        $result=new RedisSender($posts);
 
+        if($this->is_Key($result->getKey()))
+        {
+            if(strcasecmp($this->Client()->get($result->getKey()),$result->getValue())===0)
+            {
+                return 'no update';
+            }else{
+
+                $this->Client()->set($result->getKey(), $result->getValue());
+                return 'update';
+            }
+        }
+        else
+        {
+            $this->Client()->set($result->getKey(), $result->getValue());
+            return 'insert';
+        }
+
+
+    }
+
+    private function is_Key($key)
+    {
+        return  $this->Client()->get($key);
     }
 
 }
